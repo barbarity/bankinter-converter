@@ -79,8 +79,8 @@ The detection is language-agnostic and relies on data content rather than header
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd bank-importer
+git clone https://github.com/barbarity/bankinter-converter.git
+cd bankinter-converter
 
 # Create virtual environment and install dependencies
 uv sync
@@ -90,8 +90,8 @@ uv sync
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd bank-importer
+git clone https://github.com/barbarity/bankinter-converter.git
+cd bankinter-converter
 
 # Create virtual environment
 python -m venv .venv
@@ -137,7 +137,7 @@ bankinter-converter --help
 ## Project Structure
 
 ```
-bank-importer/
+bankinter-converter/
 ├── bankinter_converter/
 │   ├── __init__.py
 │   ├── cli.py              # Command-line interface
