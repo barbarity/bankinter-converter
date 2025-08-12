@@ -148,6 +148,7 @@ bankinter-converter/
 │   └── test_credit_card.py
 ├── pyproject.toml          # Project configuration
 ├── README.md              # This file
+├── LICENSE                # MIT License
 └── .gitignore
 ```
 
