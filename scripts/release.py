@@ -40,9 +40,13 @@ def main():
     print(f"\nRelease {version} prepared!")
     print("\nNext steps:")
     print(f"1. Commit changes: git add . && git commit -m 'Release {version}'")
-    print(f"2. Create tag: git tag v{version}")
-    print(f"3. Push tag: git push origin v{version}")
-    print("4. GitHub Actions will automatically publish to PyPI")
+    print(f"2. Push to main: git push origin main")
+    print(f"3. Create GitHub release:")
+    print(f"   - Go to GitHub repository")
+    print(f"   - Click 'Releases' → 'Create a new release'")
+    print(f"   - Set tag to v{version}")
+    print(f"   - Add release notes and publish")
+    print(f"4. GitHub Actions will automatically publish to PyPI")
     print("\nNote: Project uses src/ layout structure for better packaging practices.")
 
 

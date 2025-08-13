@@ -52,27 +52,33 @@ uv run ruff check .
 uv build
 ```
 
-### 3. Commit and Tag
+### 3. Commit and Push
 
 ```bash
 # Commit changes
 git add .
 git commit -m "Release 0.2.0"
-
-# Create and push tag
-git tag v0.2.0
-git push origin v0.2.0
+git push origin main
 ```
 
-### 4. Automated Release
+### 4. Create GitHub Release
 
-Once you push the tag, GitHub Actions will automatically:
+1. Go to your repository on GitHub
+2. Click "Releases" in the right sidebar
+3. Click "Create a new release"
+4. Set the tag to `v0.2.0` (e.g., `v0.1.0`, `v0.2.0`)
+5. Add a title like "Release 0.2.0"
+6. Add release notes describing the changes
+7. Click "Publish release"
+
+### 5. Automated Publishing
+
+Once you publish the GitHub release, the workflow will automatically:
 
 1. Run all tests
 2. Check code quality
 3. Build the package
 4. Publish to PyPI (using Trusted Publishers)
-5. Create a GitHub release
 
 ## Installation Methods
 
