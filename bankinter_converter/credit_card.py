@@ -1,7 +1,6 @@
 """Bankinter credit card converter implementation."""
 
 from pathlib import Path
-from typing import Union
 
 import pandas as pd
 
@@ -11,8 +10,8 @@ class CreditCardConverter:
 
     def convert_statement(
         self,
-        input_file: Union[str, Path],
-        output_file: Union[str, Path],
+        input_file: str | Path,
+        output_file: str | Path,
         verbose: bool = False,
     ) -> None:
         """

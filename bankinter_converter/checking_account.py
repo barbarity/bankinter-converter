@@ -2,7 +2,6 @@
 
 import re
 from pathlib import Path
-from typing import Union
 
 import pandas as pd
 
@@ -12,11 +11,11 @@ class CheckingAccountConverter:
 
     def convert_statement(
         self,
-        input_file: Union[str, Path],
-        output_file: Union[str, Path],
+        input_file: str | Path,
+        output_file: str | Path,
         skip_rows: int = 3,
         columns: str = "A:E",
-        sheet: Union[str, int] = 0,
+        sheet: str | int = 0,
         verbose: bool = False,
     ) -> None:
         """
