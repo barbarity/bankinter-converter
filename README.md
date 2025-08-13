@@ -148,11 +148,12 @@ bankinter-converter --help
 
 ```
 bankinter-converter/
-├── bankinter_converter/
-│   ├── __init__.py
-│   ├── cli.py              # Command-line interface
-│   ├── checking_account.py # Checking account conversion logic
-│   └── credit_card.py      # Credit card conversion logic
+├── src/
+│   └── bankinter_converter/
+│       ├── __init__.py
+│       ├── cli.py              # Command-line interface
+│       ├── checking_account.py # Checking account conversion logic
+│       └── credit_card.py      # Credit card conversion logic
 ├── tests/
 │   ├── test_checking_account.py
 │   └── test_credit_card.py

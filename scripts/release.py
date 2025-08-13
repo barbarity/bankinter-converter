@@ -43,6 +43,7 @@ def main():
     print(f"2. Create tag: git tag v{version}")
     print(f"3. Push tag: git push origin v{version}")
     print("4. GitHub Actions will automatically publish to PyPI")
+    print("\nNote: Project uses src/ layout structure for better packaging practices.")
 
 
 if __name__ == "__main__":
