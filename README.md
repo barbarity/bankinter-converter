@@ -92,8 +92,8 @@ The detection is language-agnostic and relies on data content rather than header
 git clone https://github.com/barbarity/bankinter-converter.git
 cd bankinter-converter
 
-# Create virtual environment and install dependencies
-uv sync
+# Create virtual environment and install dependencies (uses Python 3.13)
+uv sync --extra dev
 ```
 
 ### Alternative Setup with pip
@@ -103,7 +103,7 @@ uv sync
 git clone https://github.com/barbarity/bankinter-converter.git
 cd bankinter-converter
 
-# Create virtual environment
+# Create virtual environment (Python 3.8+ required)
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
