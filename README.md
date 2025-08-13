@@ -11,11 +11,21 @@ A CLI tool to convert Bankinter bank statements (checking accounts and credit ca
 
 ## Installation
 
-### Using uv (Recommended)
+### Using uvx (Recommended)
+
+```bash
+# Install and run directly
+uvx bankinter-converter --help
+
+# Or install globally
+uvx install bankinter-converter
+```
+
+### Using uv
 
 ```bash
 # Install globally as a tool
-uv tool install .
+uv tool install bankinter-converter
 
 # Or install in development mode
 uv sync
@@ -24,7 +34,7 @@ uv sync
 ### Alternative: Using pip
 
 ```bash
-pip install .
+pip install bankinter-converter
 ```
 
 ## Usage
